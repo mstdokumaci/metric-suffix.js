@@ -11,5 +11,5 @@
 		if (digits < exp2) digits = exp2;
 		
 		return number.toPrecision(digits) + 'kMGTPE'.charAt(exp - 1);
-	}
+	};
 })(typeof exports === "undefined" ? window.metric_suffix : module.exports);
