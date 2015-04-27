@@ -7,7 +7,7 @@
   "name": "metric-suffix",
   "description": "Display big numbers in short using metric suffixes like kilo (k), Mega(M).",
   "main": "./metric-suffix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "metric",
     "suffix",
@@ -23,5 +23,7 @@
     "url": "https://github.com/mstdokumaci/metric-suffix.js.git"
   },
   "homepage": "https://github.com/mstdokumaci/metric-suffix.js",
-  "license": "GPLv2"
+  "devDependencies": {"mocha": "latest"},
+  "license": "GPLv2",
+  "ignore": []
 }

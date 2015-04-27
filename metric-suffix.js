@@ -1,5 +1,7 @@
-(function(environment) {
-	environment = function (number, digits) {
+(function (environment) {
+	'use strict';
+
+	function metric_suffix (number, digits) {
 		if (number < 1e3) return number;
 		
 		if (!digits) digits = 2;
@@ -11,5 +13,10 @@
 		if (digits < exp2) digits = exp2;
 		
 		return number.toPrecision(digits) + 'kMGTPE'.charAt(exp - 1);
-	};
-})(typeof exports === "undefined" ? window.metric_suffix : module.exports);
+	}
+
+	if (environment.exports)
+		environment.exports = metric_suffix;
+	else
+		environment.metric_suffix = metric_suffix;
+})(typeof exports === "undefined" ? window : module);
