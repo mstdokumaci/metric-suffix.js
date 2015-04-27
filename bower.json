@@ -1,13 +1,13 @@
 {
+  "name": "metric-suffix",
+  "description": "Display big numbers in short using metric suffixes like kilo (k), Mega(M).",
+  "main": "./metric-suffix.js",
   "author": {
     "name": "Mustafa Dokumacı",
     "email": "mustafa@foraa.com",
     "url": "http://mustafadokumaci.com"
   },
-  "name": "metric-suffix",
-  "description": "Display big numbers in short using metric suffixes like kilo (k), Mega(M).",
-  "main": "./metric-suffix",
-  "version": "0.0.2",
+  "version": "v0.0.2",
   "keywords": [
     "metric",
     "suffix",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/mstdokumaci/metric-suffix.js",
   "devDependencies": {"mocha": "latest"},
   "license": "GPLv2",
-  "ignore": []
+  "ignore": [
+    ".npmignore",
+    ".gitignore",
+    "package.json"
+  ]
 }
